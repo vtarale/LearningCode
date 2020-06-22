@@ -1,0 +1,46 @@
+/*
+ * Author: Vihaan Tarale
+ * Brief: Calculates 2 Numbers with addition,subtraction, multiplication and division (if mentioned)
+ */
+
+#include <stdio.h>
+
+int main(void)
+{
+    int t;
+    float ans;
+    float  num;
+    float othernum;
+
+    do {
+        printf("select an operation:\n"
+               "1: Addition\n"
+               "2: Substraction\n"
+               "3: Multiplication\n"
+               "4: Division\n"
+               ": ");
+        scanf("%d", &t);
+    } while (t < 1 || t > 4);
+
+    printf("num:");
+    scanf("%f",& num);
+
+    printf("othernum:");
+    scanf("%f",& othernum);
+
+    switch(t) {
+        case 1: ans = num + othernum;
+             break;
+        case 2: ans = num - othernum;
+             break;
+        case 3: ans = num * othernum;
+            break;
+        case 4: ans = num / (float)othernum;
+            break;
+        default:
+            return -1;
+    }
+    printf("ans: %f\n", ans);
+
+    return 0;
+}
