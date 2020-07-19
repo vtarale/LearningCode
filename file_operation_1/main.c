@@ -5,7 +5,7 @@ void main()
 {
     FILE *fp;
     char ch;
-    fp=fopen("vihaan.txt", "r");
+    fp=fopen("Vihaan.txt", "r");
     if(fp==NULL)
     {
         printf("Cannot open file\n");

@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <ctype.h>
+
 int main(void)
 {
     char ch;
@@ -10,6 +11,6 @@ int main(void)
     }
     else
     {
-        puts("Your character is not a alphabet");   
+        puts("Your character is not a alphabet");
     }
 }

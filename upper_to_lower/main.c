@@ -4,7 +4,7 @@
 
 int main()
 {
-    char a[90000];
+    char a[90];
     int l,i;
 
     puts("Enter string:");
