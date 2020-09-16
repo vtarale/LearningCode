@@ -1,4 +1,5 @@
 #include <stdio.h>
+#define TRUE 1
 
 void fucntion(int x);
 
@@ -13,7 +14,7 @@ int main(void)
 }
 void fucntion(int x)
 {
-    while(1)
+    while(TRUE)
     {
         if(x>=1000)
         {
